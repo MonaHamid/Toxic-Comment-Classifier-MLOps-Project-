@@ -59,7 +59,7 @@ For the evaluation of my models in the Toxic Comment Challenge competition, I op
 
 The table below summarizes the F1 scores of the tested models on the six labels associated with toxic comments, along with their F1 macro average. In addition, the graphical visualization provided by the plot allows for an easier comparison between the models' performances across different labels.
 
-<div align="center">
+
   
 | Model Name         | toxic | severe_toxic | obscene | threat | insult | identity_hate | F1 macro avg |
 |--------------------|-------|--------------|---------|--------|--------|---------------|--------------|
