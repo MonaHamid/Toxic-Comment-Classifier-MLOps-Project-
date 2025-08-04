@@ -1,0 +1,10 @@
+ddeployments:
+  - name: daily-training
+    entrypoint: orchestration.bert_only_flow:toxic_bert_training_pipeline
+    work_pool:
+      name: default-agent-pool
+      work_queue_name: default
+    schedules:
+      - cron: "0 6 * * *"
+        timezone: "UTC"
+        active: true

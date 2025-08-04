@@ -1,0 +1,10 @@
+deployments:
+  - name: train-daily
+    entrypoint: orchestration/train_flow.py:train_all_models_multilabel
+    work_pool:
+      name: default-agent-pool
+      work_queue_name: default
+    schedules:
+      - cron: "0 6 * * *"
+        timezone: "UTC"
+        active: true

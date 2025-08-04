@@ -1,0 +1,48 @@
+###
+### A complete description of a Prefect Deployment for flow 'train_all_models_multilabel'
+###
+name: train-daily
+description: null
+version: fe86f1b2cc6b504a1115bff8e17221f7
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+schedules:
+- schedule:
+    cron: 0 6 * * *
+    timezone: null
+    day_or: true
+  active: true
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: train_all_models_multilabel
+manifest_path: null
+storage: null
+path: /workspaces/Toxic-Comment-Classifier-MLOps-Project-
+entrypoint: orchestration/train_flow.py:train_all_models_multilabel
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2025-08-04T08:11:10.289505+00:00'
+triggers: []
+enforce_parameter_schema: null

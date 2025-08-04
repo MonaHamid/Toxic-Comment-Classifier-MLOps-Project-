@@ -1,0 +1,10 @@
+deployments:
+  - name: daily-monitoring
+    entrypoint: orchestration.toxic_monitor_flow:toxic_monitoring_pipeline
+    work_pool:
+      name: default-agent-pool
+      work_queue_name: default
+    schedules:
+      - cron: "30 6 * * *"
+        timezone: "UTC"
+        active: true
