@@ -1,10 +1,12 @@
-from scripts._common_multi import load_xy_multi, mlflow_setup
-from scripts.metrics_ml import multilabel_f1
-import mlflow, mlflow.sklearn
+import mlflow
+import mlflow.sklearn
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.svm import LinearSVC
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.pipeline import Pipeline
+from sklearn.svm import LinearSVC
+
+from scripts._common_multi import load_xy_multi, mlflow_setup
+from scripts.metrics_ml import multilabel_f1
 
 # Load data + set MLflow
 Xtr, Ytr, Xte, Yte = load_xy_multi()

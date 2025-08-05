@@ -4,7 +4,10 @@ setup(
     name="src",
     packages=find_packages(),
     version="0.1.0",
-    description="The Toxic Comment Classification project aims to build a machine learning system capable of detecting toxic comments from user-generated text. The model classifies comments into multiple categories such as toxic, severe toxic, obscene, threat, insult, and identity hate.",
+    description=(
+        "This is a long line that describes everything "
+        "about your model in excessive detail..."
+    ),  # Add comma here
     author="fareeda",
     license="MIT",
 )

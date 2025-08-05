@@ -11,7 +11,7 @@ The rise of social media has brought both positive and negative interactions. To
 ---
 
 ## 2. Problem Statement
-Toxic language can be multi-dimensional, ranging from mild insults to explicit threats.  
+Toxic language can be multi-dimensional, ranging from mild insults to explicit threats.
 Our classifier predicts the probability of a comment being:
 - **toxic**
 - **severe_toxic**
@@ -30,26 +30,26 @@ Our classifier predicts the probability of a comment being:
 ---
 
 ## 4. Dataset
-We use the [**Jigsaw Toxic Comment Dataset**](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data).  
-- **~150K comments** labeled across 6 toxicity categories.  
+We use the [**Jigsaw Toxic Comment Dataset**](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data).
+- **~150K comments** labeled across 6 toxicity categories.
 - Multi-label classification task.
 
 ---
 
 ## 5. Tools & Technologies
-- **Data & Model Versioning:** DVC, Git  
-- **Pipeline Orchestration:** Prefect  
-- **Experiment Tracking:** MLflow  
-- **Monitoring:** Evidently AI + Grafana  
-- **Deployment:** FastAPI, Docker, AWS (optional)  
-- **UI:** Gradio (default) or React (optional)  
-- **Slack Bot Integration:** Slack API + Bolt for Python  
+- **Data & Model Versioning:** DVC, Git
+- **Pipeline Orchestration:** Prefect
+- **Experiment Tracking:** MLflow
+- **Monitoring:** Evidently AI + Grafana
+- **Deployment:** FastAPI, Docker, AWS (optional)
+- **UI:** Gradio (default) or React (optional)
+- **Slack Bot Integration:** Slack API + Bolt for Python
 - **Language:** Python 3.10+
 
 ---
 
 ## 6. Architecture
-**Pipeline:**  
+**Pipeline:**
 ```
 Data Ingestion → Preprocessing → Training → Evaluation → MLflow Model Registry
           ↓
@@ -124,8 +124,8 @@ make serve
   ```bash
   python deployment/app.py
   ```
-- **Slack Bot Setup:**  
-  Configure your Slack API token and channel, then run:  
+- **Slack Bot Setup:**
+  Configure your Slack API token and channel, then run:
   ```bash
   python slack_bot/bot.py
   ```

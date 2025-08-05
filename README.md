@@ -1,6 +1,6 @@
 # Toxic Comment Classification - MLOps Project
 
-This project implements an end-to-end **MLOps pipeline** for multi-label toxic comment classification using a BERT-based model. 
+This project implements an end-to-end **MLOps pipeline** for multi-label toxic comment classification using a BERT-based model.
 It includes experiment tracking, model registry, workflow orchestration, model deployment, and monitoring.
 <img width="1024" height="1024" alt="e3e484d1-563a-477b-a7c1-fd4508da963b" src="https://github.com/user-attachments/assets/3800fb19-eac4-45d9-9782-71e3d41bb14a" />
 
@@ -49,10 +49,10 @@ I employed three distinct models using TensorFlow to address the challenge:
 By utilizing these three models, I aimed to determine which approach would yield the most effective results for this particular task.
 
 # **Evaluation metric**
-For the evaluation of my models in the Toxic Comment Challenge competition, I opted to use the **macro-averaged F1 score** as the reference metric, rather than AUC-ROC as recommended by the competition guidelines. I believe F1 to be a more appropriate metric for the following reasons: 
+For the evaluation of my models in the Toxic Comment Challenge competition, I opted to use the **macro-averaged F1 score** as the reference metric, rather than AUC-ROC as recommended by the competition guidelines. I believe F1 to be a more appropriate metric for the following reasons:
 - the F1 score is a more comprehensive metric that takes both precision and recall into account and provides a more nuanced assessment of the model's performance across all the different classes. This is particularly important in the Toxic Comment Challenge, where identifying and categorizing multiple types of toxic comments is crucial.
 - Moreover, the macro-averaged F1 score does not take class imbalance into account, which ensures that every class is given equal weight independently of its proportion. This is important in imbalanced datasets where one or more classes may be significantly underrepresented.
-- In contrast, AUC-ROC can be misleading in case of imbalanced data, as it only considers the overall performance of the model without taking into account class imbalance. 
+- In contrast, AUC-ROC can be misleading in case of imbalanced data, as it only considers the overall performance of the model without taking into account class imbalance.
 - By prioritizing F1 over AUC-ROC, I aimed to ensure that my models were optimized for real-world applications.
 
 # Results
@@ -60,13 +60,13 @@ For the evaluation of my models in the Toxic Comment Challenge competition, I op
 The table below summarizes the F1 scores of the tested models on the six labels associated with toxic comments, along with their F1 macro average. In addition, the graphical visualization provided by the plot allows for an easier comparison between the models' performances across different labels.
 
 
-  
+
 | Model Name         | toxic | severe_toxic | obscene | threat | insult | identity_hate | F1 macro avg |
 |--------------------|-------|--------------|---------|--------|--------|---------------|--------------|
 | Model I (Baseline) | 0.65  | 0.40         | 0.68    | 0.45   | 0.64   | 0.56          | 0.56         |
 | Model II (Glove)   | 0.67  | 0.38         | 0.68    | 0.42   | 0.64   | 0.51          | 0.55         |
 | Model III (BERT)   | 0.67  | 0.42         | 0.70    | 0.59   | 0.70   | 0.62          | 0.62         |
-  
+
 <img width="1948" height="784" alt="image" src="https://github.com/user-attachments/assets/680b702e-dd6f-4ce9-bd03-cee5283ebb71" />
 
 

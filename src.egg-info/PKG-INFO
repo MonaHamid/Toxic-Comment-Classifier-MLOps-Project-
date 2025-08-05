@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: src
+Version: 0.1.0
+Summary: The Toxic Comment Classification project aims to build a machine learning system capable of detecting toxic comments from user-generated text. The model classifies comments into multiple categories such as toxic, severe toxic, obscene, threat, insult, and identity hate.
+Author: fareeda
+License: MIT
+License-File: LICENSE
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary

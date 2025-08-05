@@ -1,10 +1,12 @@
 # scripts/_common_multi.py
 import os
+
 import mlflow
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from src.preprocessing import preprocess_for_tfidf
+
 from src.constants import LABELS
+from src.preprocessing import preprocess_for_tfidf
 
 TRAIN_PATH = os.getenv("TRAIN_CSV", "data/raw/train.csv")
 

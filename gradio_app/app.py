@@ -1,5 +1,10 @@
 # gradio_app/app.py
-import os, pandas as pd, gradio as gr, mlflow.pyfunc
+import os
+
+import gradio as gr
+import mlflow.pyfunc
+import pandas as pd
+
 from src.constants import LABELS
 
 os.environ["MLFLOW_TRACKING_URI"] = os.getenv(

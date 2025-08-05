@@ -1,4 +1,7 @@
-import os, pandas as pd, mlflow.pyfunc
+import os
+
+import mlflow.pyfunc
+import pandas as pd
 
 os.environ["MLFLOW_TRACKING_URI"] = os.getenv(
     "MLFLOW_TRACKING_URI", "http://localhost:5050"
