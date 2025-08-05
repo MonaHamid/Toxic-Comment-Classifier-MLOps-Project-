@@ -173,6 +173,9 @@ Implemented best practices:
 - pre-commit hooks
 - Makefile for common tasks
 - GitHub Actions CI/CD pipeline
+![Screenshot 2025-08-05 164559](https://github.com/user-attachments/assets/fd359502-2713-4958-ab92-5af6df54f4f2)
+![Screenshot 2025-08-05 172739](https://github.com/user-attachments/assets/d44121d8-4e9c-40ab-bdd1-db71438413ff)
+
 
 ---
 
