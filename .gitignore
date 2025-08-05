@@ -1,1 +1,6 @@
-.venv/
+# Ignore large folders
+models/
+data/
+*.safetensors
+*.csv
+*.parquet
