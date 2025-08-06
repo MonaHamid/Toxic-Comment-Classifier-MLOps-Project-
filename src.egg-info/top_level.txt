@@ -1,3 +1,0 @@
-orchestration
-scripts
-src
